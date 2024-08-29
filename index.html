@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Math Scores
+        </title>
+        <script src="./handlers/formHandle.js" ></script>
+    </head>
+    <body>
+        <div>
+            <h2>คะแนน วิชา คณิตศาสตร์</h2>
+        </div>
+        <div>
+            <form onsubmit="formHandle(event)">
+                <h3>ข้อมูลนักเรียน</h3>
+                <label for="student_id">รหัสนักเรียน:</label><br>
+                <input type="text" name="student_id" id="student_id"><br>
+                <label for="password">รหัสผ่าน:</label><br>
+                <input type="password" name="password" id="password"><br>
+                <label for="room">ระดับชั้น:</label><br>
+                <select name="room" id="room">
+                    <option value="1_1">ม.1/1</option>
+                    <option value="1_12">ม.1/12</option>
+                    <option value="6_1">ม.6/1</option>
+                </select>
+                <h3>ข้อมูลคะแนน</h3>
+                <label for="test_type">คะแนนวิชา:</label><br>
+                <select name="test_type" id="test_type">
+                    <option value="mid_term">คะแนนสอบกลางภาค</option>
+                    <option value="final_term">คะแนนสอบกลางปลาย</option>
+                </select><br>
+                <label for="ed_year">ปีการศึกษา</label><br>
+                <select name="ed_year" id="ed_year">
+                    <option value="2567">2567</option>
+                    <option value="2568">2568</option>
+                </select><br>
+                <input type="submit" value="ค้นหา" id="fetchButton">
+            </form>
+        </div>
+        <div id="result">
+
+        </div>
+    </body>
+</html>
