@@ -4,41 +4,68 @@
         <title>
             Math Scores
         </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="./handlers/formHandle.js" ></script>
+        <link href="./styles/score.page.css" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <h2>คะแนน วิชา คณิตศาสตร์</h2>
-        </div>
-        <div>
-            <form onsubmit="formHandle(event)">
-                <h3>ข้อมูลนักเรียน</h3>
-                <label for="student_id">รหัสนักเรียน:</label><br>
-                <input type="text" name="student_id" id="student_id"><br>
-                <label for="password">รหัสผ่าน:</label><br>
-                <input type="password" name="password" id="password"><br>
-                <label for="room">ระดับชั้น:</label><br>
-                <select name="room" id="room">
-                    <option value="1_1">ม.1/1</option>
-                    <option value="1_12">ม.1/12</option>
-                    <option value="6_1">ม.6/1</option>
-                </select>
-                <h3>ข้อมูลคะแนน</h3>
-                <label for="test_type">คะแนนวิชา:</label><br>
-                <select name="test_type" id="test_type">
-                    <option value="mid_term">คะแนนสอบกลางภาค</option>
-                    <option value="final_1_term">คะแนนสอบกลางปลาย(1)</option>
-                </select><br>
-                <label for="ed_year">ปีการศึกษา</label><br>
-                <select name="ed_year" id="ed_year">
-                    <option value="2567">2567</option>
-                    <option value="2568">2568</option>
-                </select><br>
+        <div class="container">
+            <div class="header">
+                <img src="./assets/banding.jpg" alt="banding"  />
+                <h2>คะแนนวิชา คณิตศาสตร์</h2>
+            </div>
+            <div class="main">
+                <div class="result">
+                    <h3 class="result-item">ผลการค้นหา</h3>
+                    <h4 class="result-item">ชื่อ: -</h4>
+                    <h4 class="result-item">คะแนนที่ได้: -</h4>
+                </div>
+                <div class="search">
+                    <form onsubmit="formHandle(event)"></form>
+                            <div class="form-item">
+                                <h3>ข้อมูลนักเรียน</h3>
+                            </div>
+                            <div class="col">
+                                <div class="form-item">
+                                    <label for="student_id">รหัสนักเรียน:</label>
+                                    <input type="text" name="student_id" id="student_id">
+                                </div>
+                                <div class="form-item-2">
+                                    <label for="password">รหัสผ่าน:</label>
+                                    <input type="password" name="password" id="password">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-item">
+                                    <label for="room">ระดับชั้น:</label>
+                                    <select name="room" id="room">
+                                        <option value="1_1">ม.1/1</option>
+                                        <option value="1_12">ม.1/12</option>
+                                        <option value="6_1">ม.6/1</option>
+                                    </select>
+                                </div>
+                                <div class="form-item-2">
+                                    <label for="test_type">รายการคะแนน:</label>
+                                    <select name="test_type" id="test_type">
+                                        <option value="mid_term">คะแนนสอบกลางภาค</option>
+                                        <option value="final_1_term">คะแนนสอบกลางปลาย(1)</option>
+                                    </select>
+                                </div>
+                                <div class="form-item-2">
+                                    <label for="ed_year">ปีการศึกษา</label>
+                                    <select name="ed_year" id="ed_year">
+                                        <option value="2567">2567</option>
+                                        <option value="2568">2568</option>
+                                    </select>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bt-container">
                 <input type="submit" value="ค้นหา" id="fetchButton">
-            </form>
-        </div>
-        <div id="result">
-            <h1>test</h1>
+            </div>
         </div>
     </body>
 </html>
