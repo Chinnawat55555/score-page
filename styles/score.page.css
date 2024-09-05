@@ -132,25 +132,30 @@ body {
     .header {
         margin-top: 1rem;
 
+        h2{
+            margin: 1.5rem;
+        }
+
         img {
-            width: 50%
+            width: 60%
         }
     }
 
     .main {
         display: flex;
         flex-direction: row;
-        width: 80%;
+        width: 60%;
+        min-width: 605px;
     }
 
     .result {
         margin-left: 0;
         margin-bottom: 1rem;
-        width: 50%;
+        width: 40%;
     }
 
     .search {
-        width: 70%;
+        width: 60%;
         padding-inline: 0.5rem;
     }
 }
