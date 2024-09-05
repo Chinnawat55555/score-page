@@ -102,7 +102,7 @@ body {
 .bt-container {
     display: flex;
     flex-direction: column;
-    justify-content: cneter;
+    align-items: cneter;
     margin-bottom: 0.5rem;
 
     #fetchButton {
@@ -116,6 +116,7 @@ body {
 }
 
 #fetchButton {
+    align-items: center;
     padding: 1rem;
     color: white;
     border-radius: 0.5rem;

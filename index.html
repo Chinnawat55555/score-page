@@ -15,14 +15,14 @@
                 <h2>คะแนนวิชา คณิตศาสตร์</h2>
             </div>
             <div class="main">
-                <div class="result">
+                <div class="result" id="result-box">
                     <h3 class="result-item">ผลการค้นหา</h3>
                     <h4 class="result-item">ชื่อ: -</h4>
                     <h4 class="result-item">คะแนนที่ได้: -</h4>
                     <h4 class="result-item">สถานะ: -</h4>
                 </div>
                 <div class="search">
-                    <form onsubmit="formHandle(event)"></form>
+                    <form onsubmit="formHandle(event)">
                             <div class="form-item">
                                 <h3>ข้อมูลนักเรียน</h3>
                             </div>
@@ -64,11 +64,16 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="form-item">
+                                    <div class="bt-container">
+                                        <input type="submit" value="ค้นหา" id="fetchButton">
+                                    </div>
+                                </div>
+                            </div>
                     </form>
                 </div>
             </div>
-            <div class="bt-container">
-                <input type="submit" value="ค้นหา" id="fetchButton">
-            </div>
+            
     </body>
 </html>
