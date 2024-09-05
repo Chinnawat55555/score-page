@@ -90,7 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: cneter;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 
     #fetchButton {
         background: #674188;
